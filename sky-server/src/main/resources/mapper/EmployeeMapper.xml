@@ -11,16 +11,16 @@
             <if test="username != null and username != ''">
                 username = #{username},
             </if>
-            <if test="password != null ">
+            <if test="password != null and password !=''">
                 password = #{password},
             </if>
-            <if test="phone != null">
+            <if test="phone != null and phone !=''">
                 phone = #{phone},
             </if>
-            <if test="sex != null">
+            <if test="sex != null ">
                 sex = #{sex},
             </if>
-            <if test="idNumber != null ">
+            <if test="idNumber != null and idNumber != '' ">
                 id_Number = #{idNumber},
             </if>
             <if test="updateTime != null ">
