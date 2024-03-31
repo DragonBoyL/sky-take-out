@@ -41,6 +41,13 @@ public interface DishService {
     DishVO getByIdWithFlavor(Long id);
 
     /**
+     * 菜品起售停售
+     * @param status
+     * @param id
+     */
+    void startOrStop(Integer status, Long id);
+
+    /**
      * 根据id修改菜品和口味
      * @param dishDTO
      */
@@ -51,5 +58,12 @@ public interface DishService {
      * @return
      */
     List<DishVO> listWithFlavor(Dish dish);
+
+    /**
+     * 根据分类id查询菜品
+     * @param categoryId
+     * @return
+     */
+    List<Dish> list(Long categoryId);
 
 }
